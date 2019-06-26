@@ -1,0 +1,59 @@
+{
+  "name": "react-native-web-app-auth",
+  "version": "1.0.0",
+  "description": "React Native for Web implementation of react-native-app-auth",
+  "main": "dist/index.js",
+  "main-es": "src/index.ts",
+  "repository": "https://github.com/alirezarzna/react-native-web-app-auth",
+  "author": {
+    "name": "Alireza Rezania",
+    "email": "alirezarzna@gmail.com",
+    "url": "https://github.com/alirezarzna"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "react-native-web",
+    "react-native-app-auth",
+    "app-auth",
+    "oauth2"
+  ],
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --minified",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "module:metro-react-native-babel-preset"
+    ],
+    "plugins": [
+      "react-native-web"
+    ]
+  },
+  "files": [
+    "src",
+    "dist",
+    "yarn.lock"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-react-native-web": "^0.11.4",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-native-web": "^0.11.4",
+    "typescript": "^3.5.2",
+    "webpack": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react-native-web": "*"
+  },
+  "dependencies": {
+    "@openid/appauth": "^1.2.4"
+  }
+}
