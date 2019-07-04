@@ -34,7 +34,6 @@ export default ({
       // put some default
       extras = {
         ...extras,
-        prompt: 'consent',
         access_type: 'offline',
       };
 
